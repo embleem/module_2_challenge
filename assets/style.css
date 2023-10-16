@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
   }
- 
-/* hero banner styles */
-
 
  /* body styles */ 
   body {
@@ -11,31 +8,45 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: bisque;
   }
 
 /* header styles */
-  .header {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
+  h1 {
+    color: white;
   }
 
-  h1,
-  h2,
+  h2 {
+    margin: 10px;
+    padding-left: 10px;
+  }
+
   h3,
   h4,
   h5,
+
   h6 {
     margin: 0;
   }
   
-  /* nav bar styles */
+/* nav bar styles */
+
+#navigation-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    align-items: right;
   }
   
   nav li {
@@ -51,62 +62,40 @@
   }
   
   nav li a:hover {
-    background-color: #282836;
+    background-color: cadetblue;
   }
   
-  /* overall grid style 
-  #page-wrapper {
+/* hero banner styles */
+#herobanner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-banner img {
+  display: flex;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.hero-banner h2 {
+  display: flex;
+  color: gray;
+}
+
+  /* about me section styles */
+  #about {
     display: flex;
-    grid-template-columns: 20% 80% ;
-    grid-template-rows: 20% 30% 30% ;
-    grid-template-areas:
-    "about-me-section about-me-section"
-    "work-section work-section"
-    "contact-section contact-section" 
-    ;
+    justify-content: space-between;
+    padding-left: 20px;
   }
-
-  .about-me-section {
-    grid-area: about-me-section;
-  }
-
-  .work-section {
-    grid-area: work-section;
-  }
-
-  .contact-section {
-    grid-area: contact-section;
-  }
-  */
   
-  /* contact section styles */
-  .contact-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-
-  .contact-section li {
-    float: left
-  }
-
-  .contact-section li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
   /* pargraph styles */
   p {
     margin: 0;
   }
 
   /* portfolio styles */
-  #portfolio-container {
+ #portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
@@ -119,21 +108,81 @@
 
   .grid-item1 {
     grid-area: grid-item1;
+    width: 100%;
+    margin: 50;
+    padding-left: 250px;
   }
 
   .grid-item2 {
     grid-area: grid-item2;
+    width: 100%;
+    margin: 50;
+    padding-left: 250px;
   }
 
   .grid-item3 {
     grid-area: grid-item3;
+    width: 100%;
+    margin: 50;
+    padding-left: 250px;
   }
 
   .grid-item4 {
     grid-area: grid-item4;
+    width: 100%;
+    margin: 50;
+    padding-left: 250px;
   }
 
   .grid-item5 {
     grid-area: grid-item5;
+    width: 100%;
+    margin: 50;
+    padding-left: 250px;
   }
+
+  /* work section styles */
+  #work {
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  /* contact section styles */
+ #contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ 
+.contact-section h2 {
+  color: black;
+  }
+
+  .contact-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .contact-section li {
+    float: left
+  }
+
+  .contact-section li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* styles */
+
+  /*
+  #portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  */
 
