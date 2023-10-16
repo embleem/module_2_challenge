@@ -2,6 +2,9 @@
     box-sizing: border-box;
   }
  
+/* hero banner styles */
+
+
  /* body styles */ 
   body {
     margin: 0;
@@ -9,7 +12,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
-  
+
 /* header styles */
   .header {
     background-color: #F1F1F1;
@@ -51,8 +54,33 @@
     background-color: #282836;
   }
   
-/* contact section styles */
-  .page-section-contact ul {
+  /* overall grid style 
+  #page-wrapper {
+    display: flex;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 20% 30% 30% ;
+    grid-template-areas:
+    "about-me-section about-me-section"
+    "work-section work-section"
+    "contact-section contact-section" 
+    ;
+  }
+
+  .about-me-section {
+    grid-area: about-me-section;
+  }
+
+  .work-section {
+    grid-area: work-section;
+  }
+
+  .contact-section {
+    grid-area: contact-section;
+  }
+  */
+  
+  /* contact section styles */
+  .contact-section ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -60,11 +88,11 @@
     background-color: #333;
   }
 
-  .page-section-contact li {
+  .contact-section li {
     float: left
   }
 
-  .page-section-contact li a {
+  .contact-section li a {
     display: block;
     color: white;
     text-align: center;
@@ -76,3 +104,36 @@
   p {
     margin: 0;
   }
+
+  /* portfolio styles */
+  #portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "grid-item1 grid-item1 grid-item1 grid-item1"
+    "grid-item2 grid-item2 grid-item3 grid-item3"
+    "grid-item4 grid-item4 grid-item5 grid-item5"
+    ;
+  }
+
+  .grid-item1 {
+    grid-area: grid-item1;
+  }
+
+  .grid-item2 {
+    grid-area: grid-item2;
+  }
+
+  .grid-item3 {
+    grid-area: grid-item3;
+  }
+
+  .grid-item4 {
+    grid-area: grid-item4;
+  }
+
+  .grid-item5 {
+    grid-area: grid-item5;
+  }
+
